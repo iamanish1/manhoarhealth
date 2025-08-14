@@ -1,26 +1,190 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --brand: #0C1E3A;
+    --accent: #FFC857;
+    --bg: #0A0F14;
+    --surface: #0F172A;
+    --muted: #94A3B8;
+    --ring: #7C3AED;
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --danger: #DC2626;
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-white;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-6 md:px-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .prose {
+    @apply max-w-none;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    @apply font-heading font-semibold text-brand-900;
+  }
+
+  .prose h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  .prose h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .prose h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .prose h4 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  .prose p {
+    @apply text-lg leading-relaxed text-slate-700;
+  }
+
+  .prose a {
+    @apply text-accent-600 underline decoration-2 underline-offset-4 transition-colors hover:text-accent-700;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply space-y-2;
+  }
+
+  .prose li {
+    @apply text-lg text-slate-700;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-accent-400 bg-accent-50 p-6 italic text-slate-800;
+  }
+
+  .prose code {
+    @apply rounded bg-slate-100 px-2 py-1 text-sm font-mono text-slate-800;
+  }
+
+  .prose pre {
+    @apply rounded-lg bg-slate-900 p-4 text-slate-100;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0 text-inherit;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-accent-500 text-white shadow-lg hover:bg-accent-600 hover:shadow-xl active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-brand-500 text-white shadow-lg hover:bg-brand-600 hover:shadow-xl active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-500 bg-transparent text-brand-500 hover:bg-brand-500 hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-brand-500 hover:bg-brand-50;
+  }
+
+  /* Card styles */
+  .card {
+    @apply rounded-2xl bg-white p-6 shadow-soft transition-all duration-200 hover:shadow-medium;
+  }
+
+  .card-elevated {
+    @apply rounded-2xl bg-white p-8 shadow-medium transition-all duration-200 hover:shadow-large;
+  }
+
+  /* Form styles */
+  .form-input {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-base transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20;
+  }
+
+  .form-textarea {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-base transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 resize-vertical;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-slate-700 mb-2;
+  }
+
+  .form-error {
+    @apply text-sm text-danger-600;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+  }
+
+  /* Grid utilities */
+  .grid-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .grid-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
 }
