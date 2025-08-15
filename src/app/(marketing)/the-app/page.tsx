@@ -160,7 +160,7 @@ export default function AppPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {features.map((feature, index) => (
+            {features.map((feature) => (
               <div
                 key={feature.title}
                 className="card-elevated group hover:shadow-large transition-all duration-300"
@@ -198,7 +198,7 @@ export default function AppPage() {
             </h2>
             <p className="text-lg text-amber-800 leading-relaxed">
               Our chat support with clinical psychology students and peer supporters is not a substitute for licensed professional care. 
-              If you're experiencing a mental health crisis, please contact emergency services or call the helplines listed in our footer.
+              If you&apos;re experiencing a mental health crisis, please contact emergency services or call the helplines listed in our footer.
             </p>
           </div>
         </div>

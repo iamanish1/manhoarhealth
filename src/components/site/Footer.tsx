@@ -43,7 +43,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="text-slate-300 mb-6 max-w-md">
-                The world's first free mental health app exclusively for men. 
+                The world&apos;s first free mental health app exclusively for men. 
                 Get confidential chat support, join the Man2Man community, and access self-help tools.
               </p>
               <div className="flex items-center space-x-4">
@@ -137,7 +137,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Menorah Health. All rights reserved.
             </p>
             <p className="text-slate-400 text-sm">
-              Made with ❤️ for men's mental health
+              Made with ❤️ for men&apos;s mental health
             </p>
           </div>
         </div>

@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
 
             <h2 id="introduction">1. Introduction</h2>
             <p>
-              Menorah Health ("we," "our," or "us") is committed to protecting your privacy and personal information. 
+              Menorah Health (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is committed to protecting your privacy and personal information. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use 
               our mental health support platform, including our mobile application and website.
             </p>
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
               <li><strong>Legal Records:</strong> Retained as required by applicable laws</li>
             </ul>
 
-            <h2 id="children-data">6. Children's Data Protection</h2>
+            <h2 id="children-data">6. Children&apos;s Data Protection</h2>
             <div className="bg-brand-50 border border-brand-200 rounded-lg p-6 my-6">
               <h3 className="text-brand-900 font-semibold mb-3">Special Protections for Minors:</h3>
               <ul className="text-brand-800 space-y-2">
@@ -219,7 +219,7 @@ export default function PrivacyPolicyPage() {
             <h2 id="changes">13. Changes to This Privacy Policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of any material changes 
-              by posting the new Privacy Policy on our platform and updating the "Last updated" date.
+              by posting the new Privacy Policy on our platform and updating the &ldquo;Last updated&rdquo; date.
             </p>
 
             <h2 id="contact">14. Contact Us</h2>

@@ -74,7 +74,7 @@ export default function Features() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
         >
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <motion.div
               key={feature.title}
               variants={itemVariants}

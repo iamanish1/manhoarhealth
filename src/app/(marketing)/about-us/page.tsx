@@ -3,10 +3,10 @@ import { MessageCircle, Users, Wrench, BookOpen } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Menorah Health\'s mission to provide free mental health support exclusively for men through confidential chat, community, and self-help tools.',
+  description: 'Learn about Menorah Health&apos;s mission to provide free mental health support exclusively for men through confidential chat, community, and self-help tools.',
   openGraph: {
     title: 'About Us | Menorah Health',
-    description: 'Learn about Menorah Health\'s mission to provide free mental health support exclusively for men through confidential chat, community, and self-help tools.',
+    description: 'Learn about Menorah Health&apos;s mission to provide free mental health support exclusively for men through confidential chat, community, and self-help tools.',
   },
 }
 
@@ -29,7 +29,7 @@ const offerings = [
   {
     icon: BookOpen,
     title: 'Expert Insights & Media',
-    description: 'Learn from mental health professionals through articles, videos, and resources specifically curated for men\'s mental health needs.',
+    description: 'Learn from mental health professionals through articles, videos, and resources specifically curated for men&apos;s mental health needs.',
   },
 ]
 
@@ -44,7 +44,7 @@ export default function AboutUsPage() {
               About Menorah Health
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              We're on a mission to break down the barriers preventing men from seeking mental health support. 
+              We&apos;re on a mission to break down the barriers preventing men from seeking mental health support. 
               Our free platform provides a safe, accessible, and stigma-free space where every man can find the help he needs.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
                     <span className="text-3xl font-bold">M</span>
                   </div>
                   <h3 className="text-2xl font-semibold mb-4">Menorah Health</h3>
-                  <p className="text-lg opacity-90">Supporting Men's Mental Health</p>
+                  <p className="text-lg opacity-90">Supporting Men&apos;s Mental Health</p>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function AboutUsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {offerings.map((offering, index) => (
+            {offerings.map((offering) => (
               <div
                 key={offering.title}
                 className="card-elevated group hover:shadow-large transition-all duration-300"

@@ -26,9 +26,9 @@ export default function NewsletterForm() {
       await new Promise(resolve => setTimeout(resolve, 1000))
       
       setStatus('success')
-      setMessage('Thank you for subscribing! You\'ll receive our latest updates soon.')
+      setMessage('Thank you for subscribing! You&apos;ll receive our latest updates soon.')
       setEmail('')
-    } catch (error) {
+    } catch {
       setStatus('error')
       setMessage('Something went wrong. Please try again.')
     }

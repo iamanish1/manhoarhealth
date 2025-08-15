@@ -17,7 +17,7 @@ export default function FoundersNotePage() {
         <div className="container section">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-brand-900 mb-6">
-              Founder's Note
+              Founder&apos;s Note
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               A personal message from our founder about the journey to create Menorah Health.
@@ -38,7 +38,7 @@ export default function FoundersNotePage() {
                     <span className="text-4xl font-bold">M</span>
                   </div>
                   <h2 className="text-3xl font-semibold mb-2">Menorah Health</h2>
-                  <p className="text-lg opacity-90">Founder's Vision</p>
+                  <p className="text-lg opacity-90">Founder&apos;s Vision</p>
                 </div>
               </div>
             </div>
@@ -47,33 +47,33 @@ export default function FoundersNotePage() {
             <div className="prose prose-lg max-w-none">
               <div className="text-center mb-12">
                 <p className="text-lg text-slate-600 italic">
-                  "Mental health is not a destination, but a process. It's about how you drive, not where you're going."
+                  &ldquo;Mental health is not a destination, but a process. It&apos;s about how you drive, not where you&apos;re going.&rdquo;
                 </p>
                 <p className="text-sm text-slate-500 mt-2">— Noam Shpancer</p>
               </div>
 
               <p>
                 When I first conceived the idea for Menorah Health, I was driven by a simple yet powerful observation: 
-                men around the world were struggling with their mental health in silence, often because they didn't 
+                men around the world were struggling with their mental health in silence, often because they didn&apos;t 
                 know where to turn or felt that seeking help was somehow a sign of weakness.
               </p>
 
               <p>
                 Growing up, I witnessed friends, family members, and colleagues battle with depression, anxiety, 
                 and other mental health challenges. Many of them suffered in silence, believing that they had to 
-                "tough it out" or that their struggles weren't valid enough to warrant professional help. 
-                This cultural stigma around men's mental health was not just harmful—it was deadly.
+                &ldquo;tough it out&rdquo; or that their struggles weren&apos;t valid enough to warrant professional help. 
+                This cultural stigma around men&apos;s mental health was not just harmful—it was deadly.
               </p>
 
               <p>
                 The statistics are sobering: men are less likely to seek help for mental health issues, more likely 
                 to die by suicide, and often face unique barriers when trying to access mental health support. 
-                Traditional mental health services, while valuable, often don't address the specific needs and 
+                Traditional mental health services, while valuable, often don&apos;t address the specific needs and 
                 communication styles that many men prefer.
               </p>
 
               <p>
-                That's why I created Menorah Health—the world's first free mental health app exclusively for men. 
+                That&apos;s why I created Menorah Health—the world&apos;s first free mental health app exclusively for men. 
                 Our platform is designed to break down the barriers that prevent men from seeking help, providing 
                 a safe, accessible, and stigma-free space where every man can find the support he needs.
               </p>
@@ -86,7 +86,7 @@ export default function FoundersNotePage() {
               </p>
 
               <p>
-                What makes us different is our focus on creating a platform that speaks to men's unique needs. 
+                What makes us different is our focus on creating a platform that speaks to men&apos;s unique needs. 
                 We understand that many men prefer peer support, practical tools, and community connection over 
                 traditional therapy approaches. Our age-specific groups (15-18, 19-24, 25-35) ensure that users 
                 connect with others facing similar life challenges.
@@ -95,14 +95,14 @@ export default function FoundersNotePage() {
               <h2>The Power of Community</h2>
               <p>
                 One of the most powerful aspects of Menorah Health is our community. When men connect with others 
-                who understand their struggles, something remarkable happens—they realize they're not alone. 
-                They find strength in shared experiences, hope in others' recovery stories, and practical advice 
+                who understand their struggles, something remarkable happens—they realize they&apos;re not alone. 
+                They find strength in shared experiences, hope in others&apos; recovery stories, and practical advice 
                 from those who have walked similar paths.
               </p>
 
               <p>
                 Our peer supporters and clinical psychology students provide compassionate, judgment-free support 
-                that helps men feel heard and understood. While they're not licensed mental health professionals, 
+                that helps men feel heard and understood. While they&apos;re not licensed mental health professionals, 
                 they offer valuable emotional support, practical coping strategies, and guidance on when to seek 
                 professional help.
               </p>
@@ -110,15 +110,15 @@ export default function FoundersNotePage() {
               <h2>Accessibility and Innovation</h2>
               <p>
                 We believe that mental health support should be accessible to everyone, regardless of their 
-                financial situation. That's why Menorah Health is completely free—no hidden fees, no premium 
-                tiers, no barriers to access. We're committed to keeping it that way.
+                financial situation. That&apos;s why Menorah Health is completely free—no hidden fees, no premium 
+                tiers, no barriers to access. We&apos;re committed to keeping it that way.
               </p>
 
               <p>
                 Our platform is designed to be user-friendly and accessible across devices. Whether you prefer 
                 our mobile app or web platform, you can access support whenever and wherever you need it. 
-                We're constantly innovating and improving our services based on user feedback and the latest 
-                research in men's mental health.
+                We&apos;re constantly innovating and improving our services based on user feedback and the latest 
+                research in men&apos;s mental health.
               </p>
 
               <h2>Looking Forward</h2>
@@ -129,21 +129,21 @@ export default function FoundersNotePage() {
               </p>
 
               <p>
-                We're just getting started. With plans to expand our services, develop new features, and reach 
-                more men in need, we're committed to being at the forefront of digital mental health innovation. 
-                But our core mission will never change—supporting men's mental health through technology, 
+                We&apos;re just getting started. With plans to expand our services, develop new features, and reach 
+                more men in need, we&apos;re committed to being at the forefront of digital mental health innovation. 
+                But our core mission will never change—supporting men&apos;s mental health through technology, 
                 community, and human connection.
               </p>
 
               <p>
                 To every man who has ever felt alone in their struggles, to every man who has hesitated to seek 
-                help, to every man who has been told to "man up" when they needed support—this platform is for you. 
-                You are not alone, your feelings are valid, and it's okay to ask for help.
+                help, to every man who has been told to &ldquo;man up&rdquo; when they needed support—this platform is for you. 
+                You are not alone, your feelings are valid, and it&apos;s okay to ask for help.
               </p>
 
               <p>
-                Thank you for being part of this journey. Together, we're building a healthier, more supportive 
-                world for men's mental health.
+                Thank you for being part of this journey. Together, we&apos;re building a healthier, more supportive 
+                world for men&apos;s mental health.
               </p>
 
               {/* Signature */}

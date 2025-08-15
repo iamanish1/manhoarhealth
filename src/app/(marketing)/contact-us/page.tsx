@@ -22,8 +22,8 @@ export default function ContactUsPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Have questions about Menorah Health? We're here to help. 
-              Reach out to our team and we'll get back to you as soon as possible.
+              Have questions about Menorah Health? We&apos;re here to help. 
+              Reach out to our team and we&apos;ll get back to you as soon as possible.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function ContactUsPage() {
                   Contact Information
                 </h2>
                 <p className="text-lg text-slate-600 mb-8">
-                  We're here to support you. Reach out to us through any of these channels.
+                  We&apos;re here to support you. Reach out to us through any of these channels.
                 </p>
               </div>
 

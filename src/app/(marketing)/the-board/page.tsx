@@ -46,7 +46,7 @@ export default function BoardPage() {
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               The passionate individuals behind Menorah Health who are dedicated to transforming 
-              men's mental health support through technology and human connection.
+              men&apos;s mental health support through technology and human connection.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function BoardPage() {
       <section className="section bg-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
+            {teamMembers.map((member) => (
               <div
                 key={member.name}
                 className="card-elevated group hover:shadow-large transition-all duration-300"
@@ -121,9 +121,9 @@ export default function BoardPage() {
                 where seeking help is seen as a sign of strength, and where no man has to face his struggles alone.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Our leadership team is committed to expanding Menorah Health's reach, developing innovative features, 
+                Our leadership team is committed to expanding Menorah Health&apos;s reach, developing innovative features, 
                 and building partnerships that will make mental health support accessible to men everywhere. 
-                Together, we're working towards a future where mental health care is as normal and accessible as physical health care.
+                Together, we&apos;re working towards a future where mental health care is as normal and accessible as physical health care.
               </p>
             </div>
           </div>

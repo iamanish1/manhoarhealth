@@ -38,9 +38,9 @@ export default function ContactForm() {
       await new Promise(resolve => setTimeout(resolve, 1000))
       
       setStatus('success')
-      setMessage('Thank you for your message! We\'ll get back to you soon.')
+      setMessage('Thank you for your message! We&apos;ll get back to you soon.')
       setFormData({ name: '', email: '', phone: '', message: '' })
-    } catch (error) {
+    } catch {
       setStatus('error')
       setMessage('Something went wrong. Please try again or email us directly.')
     }
@@ -171,7 +171,7 @@ export default function ContactForm() {
 
       <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
         <p className="text-sm text-amber-800">
-          <strong>Important:</strong> If you're experiencing a mental health crisis, 
+          <strong>Important:</strong> If you&apos;re experiencing a mental health crisis, 
           please contact emergency services immediately or call our crisis helpline.
         </p>
       </div>

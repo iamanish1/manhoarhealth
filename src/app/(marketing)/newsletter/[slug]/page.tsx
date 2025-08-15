@@ -251,11 +251,12 @@ const getPost = (slug: string) => {
 }
 
 interface PostPageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
-  const post = getPost(params.slug)
+  const { slug } = await params
+  const post = getPost(slug)
   
   if (!post) {
     return {
@@ -282,8 +283,9 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   }
 }
 
-export default function PostPage({ params }: PostPageProps) {
-  const post = getPost(params.slug)
+export default async function PostPage({ params }: PostPageProps) {
+  const { slug } = await params
+  const post = getPost(slug)
   
   if (!post) {
     notFound()
@@ -312,7 +314,7 @@ export default function PostPage({ params }: PostPageProps) {
     dateModified: post.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://menorahhealth.com/newsletter/${params.slug}`,
+      '@id': `https://menorahhealth.com/newsletter/${slug}`,
     },
   }
 
@@ -324,7 +326,7 @@ export default function PostPage({ params }: PostPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <PostContent post={post} slug={params.slug} />
+      <PostContent post={post} />
     </>
   )
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Calendar, User, Tag, ArrowRight } from 'lucide-react'
+import { Calendar, User, ArrowRight } from 'lucide-react'
 import NewsletterForm from '@/components/forms/NewsletterForm'
 
 export const metadata: Metadata = {
@@ -97,12 +97,12 @@ export default function NewsletterPage() {
               Latest Articles
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Explore our latest articles on men's mental health, well-being, and personal growth.
+              Explore our latest articles on men&apos;s mental health, well-being, and personal growth.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {newsletterPosts.map((post, index) => (
+            {newsletterPosts.map((post) => (
               <article
                 key={post.slug}
                 className="card-elevated group hover:shadow-large transition-all duration-300"

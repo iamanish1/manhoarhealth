@@ -74,7 +74,7 @@ async function sendWithSMTP(data: EmailData): Promise<boolean> {
     // Dynamic import to avoid bundling nodemailer in client
     const nodemailer = await import('nodemailer')
     
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       host: smtpConfig.host,
       port: smtpConfig.port,
       secure: smtpConfig.secure,

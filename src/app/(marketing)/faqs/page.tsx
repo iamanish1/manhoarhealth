@@ -62,7 +62,7 @@ const faqCategories = [
       },
       {
         question: 'What if I\'m in a mental health crisis?',
-        answer: 'If you\'re experiencing a crisis, please contact emergency services immediately. Our app is not a substitute for emergency care. You can also call Tele-MANAS (14416) or KIRAN (1800-599-0019) for crisis support.',
+        answer: 'If you&apos;re experiencing a crisis, please contact emergency services immediately. Our app is not a substitute for emergency care. You can also call Tele-MANAS (14416) or KIRAN (1800-599-0019) for crisis support.',
       },
       {
         question: 'Are the peer supporters qualified?',
@@ -70,7 +70,7 @@ const faqCategories = [
       },
       {
         question: 'How do you handle data protection?',
-        answer: 'We comply with India\'s DPDP Act, 2023 and implement industry-standard security measures. Your data is encrypted, stored securely, and we have strict access controls in place.',
+        answer: 'We comply with India&apos;s DPDP Act, 2023 and implement industry-standard security measures. Your data is encrypted, stored securely, and we have strict access controls in place.',
       },
     ],
   },
@@ -88,7 +88,7 @@ export default function FAQsPage() {
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               Find answers to common questions about Menorah Health, our mental health app, 
-              and how we support men's mental well-being.
+              and how we support men&apos;s mental well-being.
             </p>
           </div>
         </div>
@@ -111,8 +111,8 @@ export default function FAQsPage() {
               Still Have Questions?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Can't find what you're looking for? Our team is here to help. 
-              Reach out to us and we'll get back to you as soon as possible.
+              Can&apos;t find what you&apos;re looking for? Our team is here to help. 
+              Reach out to us and we&apos;ll get back to you as soon as possible.
             </p>
             <a
               href="/contact-us"

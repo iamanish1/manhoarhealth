@@ -23,7 +23,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-brand-900 leading-tight"
               >
-                The World's First{' '}
+                The World&apos;s First{' '}
                 <span className="text-accent-600">Free Mental Health App</span>{' '}
                 for Men
               </motion.h1>
@@ -35,7 +35,7 @@ export default function Hero() {
                 className="text-xl text-slate-600 leading-relaxed"
               >
                 Get confidential chat support, join the Man2Man community, and access 
-                self-help tools designed specifically for men's mental health.
+                self-help tools designed specifically for men&apos;s mental health.
               </motion.p>
             </div>
 

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Calendar, User, Tag, ArrowLeft, Share2, Clock } from 'lucide-react'
+import { Calendar, User, ArrowLeft, Share2, Clock } from 'lucide-react'
 
 interface Post {
   title: string
@@ -17,10 +17,9 @@ interface Post {
 
 interface PostContentProps {
   post: Post
-  slug: string
 }
 
-export default function PostContent({ post, slug }: PostContentProps) {
+export default function PostContent({ post }: PostContentProps) {
   return (
     <>
       {/* Hero Section */}
